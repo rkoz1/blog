@@ -10,19 +10,23 @@ tags: ["ai", "cursor", "claude"]
 draft: false
 ---
 
+## Executive Summary
+
+AI-driven development is here to stay, but is not replacing skilled developers anytime soon. Using Cursor is helpful for existing codebases. It works well when you provide the AI with small pieces of information. However, it struggles to create something big from the ground up. Too much responsibility from the start can overwhelm it. This post explores the interactions with the model used by Cursor and the feedback it gave when asked to share.
+
 ## How do you interview an IDE?
 
 This post is about having an "exit interview" with Claude Sonnet 3.7 (running in Cursor IDE) 
 
-Before getting into what Claude thought about our whole interaction and the project 'we' were working on, let me set the context a little bit.
+Before I share Claude's thoughts about our interaction and the project 'we' were working on, let me give you some context.
 
 (For more context on what Cursor, Claude and the project I am building,  please scroll to the bottom of this post)
 
 ## What was I trying to do?
 
-I started a Portfolio Management Platform project  and decided that some parts of the API, like CRUD (Create/Read/Update/Delete), should be something I can delegate to Cursor to build for me. CRUD is an excellent candidate for AI as its something that my ex-colleague Mark used to refer to as 'peripheral development' - something that we should not be using our brain power on.
+I started a Portfolio Management Platform project and decided that some parts of the API, like CRUD (Create/Read/Update/Delete), should be something I can delegate to Cursor to build for me. CRUD is an excellent candidate for AI as it's something that my ex-colleague Mark used to refer to as 'peripheral development' - something that we should not be using our brain power on.
 
-Thought this would be a quick job - I've been trapped in this software engineering fallacy many times and somehow it still gets me..
+I thought this would be an easy task. I've fallen for this software engineering trap many times, but it still catches me.
 
 (See bottom of the page for video showing the PoC for managing a top-level portfolio via MCP in Claude)
 
@@ -32,11 +36,11 @@ Thought this would be a quick job - I've been trapped in this software engineeri
 
 ### Great Start
 
-It started of great - couple of simple interactions and I was able to create a simple FastAPI project with basic Pydantic classes representing a basic investment portfolio (had to clarify to the AI what type of portfolio it is).
+It started of great. After couple of simple interactions I was able to create a simple FastAPI project with basic Pydantic classes representing a basic investment portfolio (had to clarify to the AI what type of portfolio it is).
 
 ### Problem #1
 
-First problem I encountered, which thankfully wasn't too difficult to solve was introduction of MCP (Model Context Protocol). Since the training data is never as of today, I had to provide the documentation, as otherwise it assumed I was trying to use some Microsoft product. Another problem with MCP that I had, was the separation of concerns that I was building in the codebase - I tried to keep the MCP server/host code separate from the API code of the portfolio API. Just having 2 different folders with 2 different applications of Python, caused Cursor to confuse itself and having to constantly switch cwd (current working directory) and confusing CLI commands (between uv and mcp, which was the mcp cli command). After couple more system messages, thankfully this was resolved, however I expected the 'smart AI' to figure it out on its own. 
+First problem I encountered, which thankfully wasn't too difficult to solve was introduction of MCP (Model Context Protocol). Since the training data isn't current, I had to provide the documentation manually to let Cursor understand what MCP is. Another problem I encountered, was the separation of concerns that I was building in the codebase. I tried to keep the MCP server/host code separate from the API code of the portfolio API. Having two different folders with two different types of Python code confused Cursor. It had to constantly switch cwd (current working directory) and mixed up CLI commands (uv and mcp). After couple more system messages, thankfully this was resolved, however I expected the 'smart AI' to figure it out on its own. 
 
 ### Problem #2
 
@@ -330,9 +334,21 @@ My other takeaways for this attempt of a project are as follows:
 * KISS (Keep It Simple, Stupid) - for this project I could have probably been ok with just having very few files and basic libraries. If complexity is not required, do not attempt to futureproof the application codebase early, also known as [early optimisation](https://www.martinfowler.com/ieeeSoftware/yetOptimization.pdf)
 * Don't invest in companies built using [Vibe coding](https://en.wikipedia.org/wiki/Vibe_coding)!
 
+## Where Cursor shines
+
+My experiences have taught me that Cursor can be a great assistant in two main situations:
+
+### PoC
+
+I found it to be great when you want to build something quick and just want it to look ok and run, but don't really care about the how and whether it is following best practices, whether it is safe and extensible. Fantastic for prototyping and having something to show and discuss with the team and/or with the stakeholders.
+
+### Established codebase
+
+With an established codebase AI excels at 'colouring in' - if you have a specific feature you want to implement on top of your existing codebase, all you have to do is to ask for an implementation with tests and following the standards already there in the code - in majority of the cases this will work fine, unless the requirements are very complicated.
+
 ## Role of Software Engineers in Age of AI
 
-Software Engineering isn't dead (yet?) as many non-technical people would have us believe. AI is a great tool, but so far it only augments development and is best used in the hands of skilled and experienced developers, who look at solutions beyond just a single codebase and who understand the domain they work in. Cursor is a fantastic tool if you want to get started quick and have some ideas about the sort of solution you want to build. For building something complex it may not be the best idea, however it is worth using for analysing your codebase and suggesting changes. 
+Software Engineering isn't dead (yet?) as many people would have us believe. AI is a great tool, but so far it only augments development and is best used in the hands of skilled and experienced developers, who look at solutions beyond just a single codebase and who understand the domain they work in. Cursor is a fantastic tool if you want to get started quick and have some ideas about the sort of solution you want to build. For building something complex it may not be the best idea, however it is worth using for analysing your codebase and suggesting changes. 
 
 As I have recently read, there is no single tool out there (including the newly release Firebase Studio), which fully understands for example standards of authentication and always gets it wrong, so even if it gets you 80% of the way there, you still need skilled engineers to take you all the way to a great solution.
 
