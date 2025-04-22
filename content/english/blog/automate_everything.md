@@ -7,7 +7,7 @@ image: "/images/posts/automate_everything/n8n.png"
 categories: ["Automation", "Artificial Intelligence"]
 author: "Rafal Koziarz"
 tags: ["ai", "automation", "n8n"]
-draft: false
+draft: true
 ---
 
 ## TEST

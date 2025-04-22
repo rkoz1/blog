@@ -7,7 +7,7 @@ image: "/images/posts/mcp/mcp.png"
 categories: ["AI"]
 author: "Rafal Koziarz"
 tags: ["ai", "mcp"]
-draft: false
+draft: true
 ---
 
 ## TEST
