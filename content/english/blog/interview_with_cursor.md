@@ -12,7 +12,7 @@ draft: false
 
 ## Executive Summary
 
-AI-driven development is here to stay, but is not replacing skilled developers anytime soon. Using Cursor is helpful for existing codebases. It works well when you provide the AI with small pieces of information. However, it struggles to create something big from the ground up. Too much responsibility from the start can overwhelm it. This post explores the interactions with the model used by Cursor and the feedback it gave when asked to share.
+AI-driven development is here to stay, but it is not replacing skilled developers anytime soon. Using Cursor is helpful for existing codebases. It works well when you provide the AI with small pieces of information. However, it struggles to create something big from the ground up. Too much responsibility from the start can overwhelm it. This post explores the interactions with the model used by Cursor and the feedback it gave when asked to share.
 
 ## How do you interview an IDE?
 
