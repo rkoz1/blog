@@ -6,7 +6,7 @@ date: 2025-04-17T05:00:00Z
 image: "/images/posts/cursor_interview/main_image_cursor.png"
 categories: ["Artificial Intelligence"]
 author: "Rafal Koziarz"
-tags: ["ai", "cursor", "claude"]
+tags: ["ai", "cursor", "claude", "python", "mcp"]
 draft: false
 ---
 
@@ -36,7 +36,7 @@ I thought this would be an easy task. I've fallen for this software engineering 
 
 ### Great Start
 
-It started of great. After couple of simple interactions I was able to create a simple FastAPI project with basic Pydantic classes representing a basic investment portfolio (had to clarify to the AI what type of portfolio it is).
+It started off great. After couple of simple interactions I was able to create a simple Python project using FastAPI with basic Pydantic classes representing a basic investment portfolio (had to clarify to the AI what type of portfolio it is).
 
 ### Problem #1
 
@@ -122,7 +122,7 @@ As you may have guessed by this point, Cursor made an absolute mess with the cod
 * Most critical issue was with version management and version incompatibility between packages and probably more importantly the AI's disregard for checking what version of python I'm running (or prefer) for this project
     * On that note, when building/running/testing the code the assistant would sometimes try venv, sometimes uv and sometimes just try and run the code 'raw' via global python, which would not have majority of the required packages - then try to install them or start looking for other versions of python on the machine
 * Configuration management was all over the place - some variables got stored in .env, some inline and some in main.py
-* Some best practices are only valuable for complex, larger projects - for a tiny API like this one adding Alembic was simply unnecessary and given that I asked the AI to use SQLite it would be nice if 'thought' about this and realised that this isn't some complex project
+* Some best practices are only valuable for complex, larger projects - for a tiny API like this one adding Alembic was simply unnecessary and given that I asked the AI to use SQLite it would be nice if it 'thought' about this and realised that this isn't some complex project
     * I did ask the AI to remove Alembic by saying 'the database for now will be very basic, can we remove alembic as it adds a bit of complexity'
 * Auto-run is great as reducing downtime, but eats up tokens very fast - fortunately the 'slow' requests are unlimited on Cursor Pro
 
@@ -151,7 +151,7 @@ I asked the model couple of questions:
 * What did the user (me) want to do?
 * How many times did the user have to prompt you (the AI) to get it right?
 * How many times did I run the same code and got the same error?
-* What prompts where the most useful from the user to help you move forward?
+* What prompts were the most useful from the user to help you move forward?
 * How would you rate the structure, quality of the code and development tools around the project?
 
 {{< accordion "First response" >}}
@@ -323,7 +323,7 @@ Would you like me to expand on any of these sections or add more specific detail
 
 ## Takeaways
 
-I cannot say I agree with many things that the model summarised in terms of the issues as we did implement a lot of things it suggests, its just that it didn't follow them. Also think, if the model knows what could have been done better why didn't it say so! 
+I cannot say I agree with many things that the model summarised in terms of the issues as we did implement a lot of things it suggests, it's just that it didn't follow them. Also think, if the model knows what could have been done better why didn't it say so! 
 
 Many people mention that AI is very good at imitating human intelligence, rather than being something else - through my experience with Cursor I have to agree - it did feel like working with a colleague who knows a lot of things, holds back a lot of personal opinions on what should be done, yet is quick to point them out as flaws of the current design when asked!  The key thing here is to make sure you ask the AI many questions, as it will not offer too much help on its own.
 
