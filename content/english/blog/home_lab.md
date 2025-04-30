@@ -19,8 +19,6 @@ tags:
   - docker
 draft: false
 ---
-## Executive Summary
-
 Home Lab is a fun way to learn and experiment, but it can also be a powerful tool for automating some of the daily tasks, without the need for 3rd party cloud or expensive SaaS licenses. **For anyone, regardless of your technical background, it can be a gateway to managing your own (free!) AI/LLMs and creating automation using no-code tools like n8n *(see 'Automate Everything!')***
 
 For anyone working in software development, it is also a chance to **be your own IT department** - handling everything yourself - infrastructure, identity, scripting, DevOps process, development and much more. It also gives you the opportunity to experiment with new technology without the walls of enterprise proxies, policies and politics. 
