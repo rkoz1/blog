@@ -23,9 +23,9 @@ Home Lab is a fun way to learn and experiment, but it can also be a powerful too
 
 For anyone working in software development, it is also a chance to **be your own IT department** - handling everything yourself - infrastructure, identity, scripting, DevOps process, development and much more. It also gives you the opportunity to experiment with new technology without the walls of enterprise proxies, policies and politics. 
 
-For those of you interested in Solution and Enterprise Architecture, I believe it gives you the opportunity to shape an opinion about each layer in the stack. A simple hello world can be enough to build empathy for what developers have to go through when using certain technologies.
+For those of you interested in **Solution and Enterprise Architecture**, I believe it gives you the opportunity to shape an opinion about each layer in the stack. A simple hello world can be enough to build empathy for what developers have to go through when using certain technologies.
 
-In my **[introduction post](/blog/blog_made)** I mentioned the concept of a Second Brain - the role of my Home Lab will also be to help me manage the tremendous amount of information I come across each day and condense it into manageable content that I can digest while having my morning breakfast. More on that in the ***'Compressing my day into a PDF'* section which will be published in part 2.** 
+In my **[introduction post](/blog/blog_made)** I mentioned the concept of a *Second Brain* - the role of my Home Lab will also be, to help me manage the tremendous amount of information I come across each day and condense it into manageable content that I can digest while having my morning breakfast. More on that in the ***'Compressing my day into a PDF'* section which will be published in part 2.** 
 
 In **Part 1** of this post we will explore the setup, the reason and where this can take you
 **Part 2** will focus on solid examples of running complex agent setups, automation workflows, exposing services to the internet and more
@@ -130,9 +130,9 @@ And of course you can [fine tune](https://www.gradient.ai/blog/fine-tuning-101-f
 
 ## Automate Everything!
 
-I will keep it brief as I want to deep dive in Part 2, but I'm very excited to share my experience and learnings around n8n as its an incredible tool, offering so many integrations, as well as being highly intuitive. In *'What's coming in Part 2'* I'm sharing some of the things I'm using it for.
+I will keep it brief as I want to deep dive in Part 2, but I'm very excited to share my experience and learnings around n8n as it's an incredible tool, offering so many integrations, as well as being highly intuitive. In *'What's coming in Part 2'* I'm sharing some of the things I'm using it for.
 
-I've worked with tools like Camunda, Microsoft Power Automate / Flow, K2 and others in the past - but this is nothing like those. Its easy to setup (literally one command to run it), the integrations are drag and drop, without any silly 'premium connectors', and you can test everything directly from the UI and see the flow of data/events. 
+I've worked with tools like Camunda, Microsoft Power Automate / Flow, K2 and others in the past - but this is nothing like those. It's easy to setup (literally one command to run it), the integrations are drag and drop, without any silly 'premium connectors', and you can test everything directly from the UI and see the flow of data/events. 
 
 I haven't gotten round to running it via Docker, so for now what I suggest is running it via npm
 
