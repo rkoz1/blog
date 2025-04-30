@@ -44,7 +44,7 @@ Although technically anything can be a server and your existing laptop or PC can
 
 I went for the absolute basic model with a M4 chip and 16GB ram - more than plenty for the type of things I will talk about in this post
 
-The system consumes **4w of power when idle**, which is incredible. It runs cool and completely quiet and you can theoretically place it anywhere around the house or you could make it portable, if you're a DYI magician
+The system consumes **4w of power when idle**, which is incredible. It runs cool and completely quiet and you can theoretically place it anywhere around the house or you could make it portable, if you're a DIY magician
 
 {{<youtube MNnpzamnX84 >}}
 
