@@ -2,7 +2,7 @@
 title: "How and why did I start a blog?"
 meta_title: "Building a blog"
 description: "Guide on building blogs with Hugo"
-date: 2025-04-28T05:00:00Z
+date: 2025-04-15T05:00:00Z
 image: "/images/posts/why_blog/blog_made.png"
 categories: ["Technology"]
 author: "Rafal Koziarz"

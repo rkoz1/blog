@@ -2,7 +2,7 @@
 title: Practical guide to setting up a Home Lab (part 1)
 meta_title: Home Lab on Mac Mini M4 with automation, LLMs and more
 description: Home Lab on Mac Mini M4 with automation, LLMs and more
-date: 2025-04-17T05:00:00Z
+date: 2025-04-30T05:00:00Z
 image: /images/posts/home_lab/home_lab.png
 categories:
   - Automation
