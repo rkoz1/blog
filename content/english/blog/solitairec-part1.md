@@ -331,5 +331,7 @@ _If you're replatforming a shop like this and want to know what you're walking i
 
 _And yes, Home Lab Part 2 is still owed. Between the new Gemma model, TurboQuant, OpenClaw and the explosion of open-source agent harnesses, the local-AI story has moved on enough that when I finally write it, it will be a different post to the one I would have written last summer. I consider this a feature._
 
+[Visit SolitaireC website](https://rafal.koziarz.eu/blog/context_engineering/)
+
 ![Filters](/images/posts/solitairec-part1/img2.png)
 ![Quick Add To Cart](/images/posts/solitairec-part1/img3.png)
