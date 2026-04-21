@@ -1,0 +1,8 @@
+<details class="my-6 rounded border border-border dark:border-darkmode-border">
+  <summary class="cursor-pointer select-none px-4 py-3 font-medium bg-light dark:bg-darkmode-light rounded">
+    {{ .Get "summary" | default (.Get 0) | default "Show code" }}
+  </summary>
+  <div class="px-4 pt-2 pb-1">
+    {{ .Inner }}
+  </div>
+</details>
